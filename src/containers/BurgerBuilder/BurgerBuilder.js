@@ -77,7 +77,7 @@ class BurgerBuilder extends Component {
   };
 
   purchaseContiuneHandler = () => {
-    alert("Contine");
+    alert("!Contine");
   };
 
   render() {
@@ -95,8 +95,9 @@ class BurgerBuilder extends Component {
         >
           <OrderSummary
             ingredients={this.state.ingredients}
-            purchaseCanceld={this.purchaseCancelHandler}
+            purchaseCanceled={this.purchaseCancelHandler}
             purchaseContiuned={this.purchaseContiuneHandler}
+            price={this.state.totlaPrice}
           />
         </Modal>
         <div>
